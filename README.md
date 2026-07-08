@@ -43,7 +43,27 @@ Gli script principali sono:
 1. Spostarsi nella cartella dove si vuole mettere il progetto:
    ``` cd ~/Desktop ```
 2. Scaricare il progetto da GitHub ``` git clone https://github.com/USERNAME/Progetto_Esame_MC_Geant.git ``` e spostarsi nella cartella del progetto ``` cd Progetto_Esame_MC_Geant ```
-
+3. Inizializzare GEANT4
+4. Creare la cartella di build:
+   ```
+   cd ..
+   mkdir build_progetto
+   cd build_progetto
+   ```
+5. Configurare il progetto con CMake: ``` cmake ../Progetto_Esame_MC_Geant``` e compilare con ad esempio 4 core ```make -j4```
+6. Lanciare una macro salvando tutto in un file log:
+   ```
+   ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/protoni_200MeV_long_10000_g40.mac > protoni_10000.log 2>&1
+   ```
+   oppure lanciare più simulazioni in sequenza:
+   ``` 
+   ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/protoni_200MeV_long_10000_g40.mac > protoni_10000.log 2>&1
+   ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/He_200MeVu_long_10000_g40.mac > He_10000.log 2>&1
+   ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/C_200MeVu_long_10000_g40.mac > C_10000.log 2>&1
+   ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/O_200MeVu_long_10000_g40.mac > O_10000.log 2>&1
+   ```
+7. Fare il plot con Python:
+   Dalla cartella principale lanciare: ``` python3 radiobiology/python/plot_depth_dose.py ``` 
 # README RADIOBIOLOGY
 
 \page Exampleradiobiology Example radiobiology
