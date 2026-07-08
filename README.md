@@ -38,6 +38,11 @@ Gli script principali sono:
 - plot_lateral_profiles.py per i profili laterali;
 - plot_all_particles.py per il confronto tra particelle.
 
+# Esempio di simulazione
+
+1. Spostarsi nella cartella dove si vuole mettere il progetto:
+   ''' cd ~/Desktop '''
+2. Scaricare il progetto da GitHub ''' git clone https://github.com/USERNAME/Progetto_Esame_MC_Geant.git ''' e spostarsi nella cartella del progetto ''' cd Progetto_Esame_MC_Geant '''
 
 # README RADIOBIOLOGY
 
