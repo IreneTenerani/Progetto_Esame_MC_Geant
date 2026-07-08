@@ -1,0 +1,85 @@
+################################################################################
+# Protoni 200 MeV
+# Profilo longitudinale della dose in fantoccio acqua
+# Test con 1000 particelle
+
+################################################################################
+# Verbose
+/control/verbose 0
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+################################################################################
+# Physics list adroterapia
+/Physics/addPhysics HADRONTHERAPY_1
+/run/numberOfThreads 4
+
+################################################################################
+# Geometria
+# Fantoccio acqua 30 cm lungo x e 6 cm nelle altre direzioni
+# x direzione di propazione del fascio
+/detectorGeom/setMat G4_WATER
+/detectorGeom/setBoxSizes 30 6 6 cm
+
+################################################################################
+# Voxelizzazione
+# Slice da 1 mm lungo x
+# Nessuna voxel lungo y e z
+/voxels/setVoxelSizes 1 60 60 mm
+
+################################################################################
+# Inizializzazione
+/run/initialize
+
+################################################################################
+# Production cuts
+# 0.1 mm come per l'esempio Radiobiology
+/run/setCutForAGivenParticle e- 0.1 mm
+/run/setCutForAGivenParticle e+ 0.1 mm
+/run/setCutForAGivenParticle proton 0.1 mm
+
+################################################################################
+# Fascio primario
+/gps/particle proton
+
+# La sorgente sulla faccia iniziale del fantoccio.
+# Il fantoccio lungo x va da -15 cm a +15 cm.
+# Il fascio si propaga nella direzione delle x crescenti quindi da negative a positive.
+# Sorgente circolare non perfettamente puntiforme
+/gps/pos/centre -15. 0. 0. cm
+/gps/pos/type Point
+/gps/pos/shape Circle
+/gps/pos/radius 0.2 cm
+
+# Fascio diretto lungo +x (da negative a positive)
+/gps/direction 1 0 0
+
+# Energia monoenergetica 200 MeV
+/gps/ene/type Mono
+/gps/ene/mono 200 MeV
+
+################################################################################
+# Dose
+/dose/reset
+/dose/verbose 1
+/dose/calculate true
+/dose/fileName output/dose_proton_200MeV_1000.out
+/dose/print
+
+################################################################################
+# LET disattivato per simulazione base
+/LET/reset
+/LET/verbose 0
+/LET/calculate false
+
+################################################################################
+# RBE disattivato per simulazione base
+/rbe/reset
+/rbe/verbose 0
+/rbe/calculate false
+
+################################################################################
+# Run
+/run/printProgress 100
+/run/beamOn 1000

@@ -1,0 +1,51 @@
+# Protoni 200 MeV in acqua
+# Geometria 40 x 10 x 10 cm
+# Profilo longitudinale della dose
+
+/control/verbose 0
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+/Physics/addPhysics HADRONTHERAPY_1
+/run/numberOfThreads 4
+
+/detectorGeom/setMat G4_WATER
+/detectorGeom/setBoxSizes 40 10 10 cm
+
+/voxels/setVoxelSizes 1 100 100 mm
+
+/run/initialize
+
+/run/setCutForAGivenParticle e- 0.1 mm
+/run/setCutForAGivenParticle e+ 0.1 mm
+/run/setCutForAGivenParticle proton 0.1 mm
+
+/gps/particle proton
+
+/gps/pos/centre -20. 0. 0. cm
+/gps/pos/type Point
+/gps/pos/shape Circle
+/gps/pos/radius 0.2 cm
+
+/gps/direction 1 0 0
+
+/gps/ene/type Mono
+/gps/ene/mono 200 MeV
+
+/dose/reset
+/dose/verbose 1
+/dose/calculate true
+/dose/fileName output/dose_proton_200MeV_1000_g40.out
+/dose/print
+
+/LET/reset
+/LET/verbose 0
+/LET/calculate false
+
+/rbe/reset
+/rbe/verbose 0
+/rbe/calculate false
+
+/run/printProgress 10000
+/run/beamOn 100000
