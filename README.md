@@ -13,7 +13,19 @@ La simulazione utilizza geometria molto semplice che consiste in un fantoccio d�
 40 cm × 10 cm × 10 cm
 I vari fasci simulati si propagano lungo la direzione longitudinale del fantoccio (x) e la sorgente è posizionata in corrispondenza della faccia di ingresso del fantoccio a x = -20 cm rispetto al centro della geometria che si trova a x=0.
 Questa configurazione permette di contenere il range delle particelle simulate e osservare il deposito di dose lungo la profondità.
-## Voxellizazione
+Solamente per una simulazione longitudinale per protoni da 200 MeV con 1M di eventi è stata usata una geometria più piccola pari a 30 cm x 6 cm x 6 cm. 
+### Voxellizazione
 Per tracciare il profilo longitudinale di di rilascio della dose è stata utilizzata una voxelizzazione del fantoccio ad acqua pari a 1 mm × 100 mm × 100 mm, integrando la dose sulla sezione trasversale del fantoccio.
 Per ottenere la distribuzione laterale della dose rispetto all'asse del fascio è stata utilizzata una voxellizazione 1 mm × 1 mm × 100 mm. 
- 
+## Simulazione 
+La simulazione è stata organizzata in due fasi.
+### 1. Test a bassa statistica
+Prima di lanciare le simulazioni lunghe, sono stati fatti dei test con file macro da 10.000 eventi per valutare:
+- correttezza della geometria;
+- corretta generazione delle particelle;
+- produzione dei file di output;
+- corretto funzionamento degli script Python per la visualizzazione dei risultati;
+- stimare il tempo richiesto per la simulazione.
+### 2. Simulazioni finali con più eventi
+Dopo i test, sono state effettuate simulazioni da 100.000 eventi per tutte le particelle con la geometria 40 cm x 10 cm x 10 cm sia per profili longitudinali che trasversali e una simulazione da 1M di eventi per protoni da 200 MeV con una geometria più piccola pari a 30 cm x 6 cm x 6 cm al fine di contenere i tempi richiesti per la simulazione. 
+Queste simulazioni permettono di ottenere curve meno rumorose che possono essere confrontate con le curve ottenute con le simulazioni a minore statistica di test.
