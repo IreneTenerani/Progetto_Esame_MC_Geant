@@ -8,3 +8,4 @@ Sono state considerate le seguenti particelle:
 - Carbonio	C	200 MeV/u
 - Ossigeno	O	200 MeV/u
 - Neon	Ne	200 MeV/u
+## Struttura del progetto
