@@ -29,3 +29,10 @@ Prima di lanciare le simulazioni lunghe, sono stati fatti dei test con file macr
 ### 2. Simulazioni finali con più eventi
 Dopo i test, sono state effettuate simulazioni da 100.000 eventi per tutte le particelle con la geometria 40 cm x 10 cm x 10 cm sia per profili longitudinali che trasversali e una simulazione da 1M di eventi per protoni da 200 MeV con una geometria più piccola pari a 30 cm x 6 cm x 6 cm al fine di contenere i tempi richiesti per la simulazione. 
 Queste simulazioni permettono di ottenere curve meno rumorose che possono essere confrontate con le curve ottenute con le simulazioni a minore statistica di test.
+Sono stati anche confrontate le distribuzioni di dose sia in profondità che laterali dei vari ioni simulati. 
+## Analisi dei risultati
+Gli output generati dalle macro di Geant4 vengono analizzati e graficati con semplici script Python contenuti nella cartella analysis/.
+Gli script principali sono:
+- plot_depth_dose.py per i profili di dose longitudinali;
+- plot_lateral_profiles.py per i profili laterali;
+- plot_all_particles.py per il confronto combinato tra particelle.
