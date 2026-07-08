@@ -197,16 +197,16 @@ for lateral_path in lateral_files:
 
     x_index, y_index, z_index, dose = read_dose_file(lateral_path)
 
-    # Estraggo la sezione laterale alla profondità del Bragg peak
+    # Estrae la sezione laterale alla profondità del Bragg peak
     mask = x_index == bragg_x_index
 
     y_sel = y_index[mask]
     dose_sel = dose[mask]
 
-    # Converto y_index in coordinata laterale fisica
+    # Converte y_index in coordinata laterale fisica
     y_mm = (y_sel + 0.5) * voxel_y_mm - size_y_mm / 2.0
 
-    # Ordino da sinistra a destra
+    # Ordina da sinistra a destra
     order = np.argsort(y_mm)
     y_mm = y_mm[order]
     dose_sel = dose_sel[order]
