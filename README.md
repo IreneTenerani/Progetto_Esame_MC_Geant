@@ -35,4 +35,4 @@ Gli output generati dalle macro di Geant4 vengono analizzati e graficati con sem
 Gli script principali sono:
 - plot_depth_dose.py per i profili di dose longitudinali;
 - plot_lateral_profiles.py per i profili laterali;
-- plot_all_particles.py per il confronto combinato tra particelle.
+- plot_all_particles.py per il confronto tra particelle.
