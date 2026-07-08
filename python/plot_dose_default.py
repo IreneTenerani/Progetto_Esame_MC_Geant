@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Leggo il file saltando la prima riga, che contiene i nomi delle colonne
+# Legge il file saltando la prima riga, che contiene i nomi delle colonne
 data = np.loadtxt("output/dose_default_58MeV_1000.out", skiprows=1)
 
 # Colonne del file:
@@ -15,7 +15,7 @@ dose = data[:, 3]
 # Nella macro default la dimensione del voxel lungo x è 1 mm
 voxel_size_mm = 1.0
 
-# Uso il centro della slice come profondità
+# Usa il centro della slice come profondità
 depth_mm = (x_index + 0.5) * voxel_size_mm
 
 plt.figure()
