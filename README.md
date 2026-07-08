@@ -8,4 +8,12 @@ Sono state considerate le seguenti particelle:
 - Carbonio	C	200 MeV/u
 - Ossigeno	O	200 MeV/u
 - Neon	Ne	200 MeV/u
-## Struttura del progetto
+## Geometria di Simulazione
+La simulazione utilizza geometria molto semplice che consiste in un fantoccio d’acqua di dimensioni:
+40 cm × 10 cm × 10 cm
+I vari fasci simulati si propagano lungo la direzione longitudinale del fantoccio (x) e la sorgente è posizionata in corrispondenza della faccia di ingresso del fantoccio a x = -20 cm rispetto al centro della geometria che si trova a x=0.
+Questa configurazione permette di contenere il range delle particelle simulate e osservare il deposito di dose lungo la profondità.
+## Voxellizazione
+Per tracciare il profilo longitudinale di di rilascio della dose è stata utilizzata una voxelizzazione del fantoccio ad acqua pari a 1 mm × 100 mm × 100 mm, integrando la dose sulla sezione trasversale del fantoccio.
+Per ottenere la distribuzione laterale della dose rispetto all'asse del fascio è stata utilizzata una voxellizazione 1 mm × 1 mm × 100 mm. 
+ 
