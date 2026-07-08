@@ -1,0 +1,90 @@
+==========================================
+Inizio simulazioni 1e6 - geometria g40
+Data inizio: mar  7 lug 2026 22:20:15 CEST
+==========================================
+
+------------------------------------------
+Avvio macro: macro/C_200MeVu_1000000_g40.mac
+Log:         output/log_C_200MeVu_1000000_g40.txt
+Ora:         mar  7 lug 2026 22:20:15 CEST
+------------------------------------------
+Fine macro: macro/C_200MeVu_1000000_g40.mac
+Ora:        mar  7 lug 2026 22:44:40 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/C_200MeVu_lateral_1000000_g40.mac
+Log:         output/log_C_200MeVu_lateral_1000000_g40.txt
+Ora:         mar  7 lug 2026 22:44:40 CEST
+------------------------------------------
+Fine macro: macro/C_200MeVu_lateral_1000000_g40.mac
+Ora:        mar  7 lug 2026 23:28:14 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/He_200MeVu_1000000_g40.mac
+Log:         output/log_He_200MeVu_1000000_g40.txt
+Ora:         mar  7 lug 2026 23:28:14 CEST
+------------------------------------------
+Fine macro: macro/He_200MeVu_1000000_g40.mac
+Ora:        mar  7 lug 2026 23:37:11 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/He_200MeVu_lateral_1000000_g40.mac
+Log:         output/log_He_200MeVu_lateral_1000000_g40.txt
+Ora:         mar  7 lug 2026 23:37:11 CEST
+------------------------------------------
+Fine macro: macro/He_200MeVu_lateral_1000000_g40.mac
+Ora:        mar  7 lug 2026 23:49:45 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/Ne_200MeVu_1000000_g40.mac
+Log:         output/log_Ne_200MeVu_1000000_g40.txt
+Ora:         mar  7 lug 2026 23:49:45 CEST
+------------------------------------------
+Fine macro: macro/Ne_200MeVu_1000000_g40.mac
+Ora:        mer  8 lug 2026 00:29:33 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/O_200MeVu_1000000_g40.mac
+Log:         output/log_O_200MeVu_1000000_g40.txt
+Ora:         mer  8 lug 2026 00:29:33 CEST
+------------------------------------------
+Fine macro: macro/O_200MeVu_1000000_g40.mac
+Ora:        mer  8 lug 2026 01:01:47 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/O_200MeVu_lateral_1000000_g40.mac
+Log:         output/log_O_200MeVu_lateral_1000000_g40.txt
+Ora:         mer  8 lug 2026 01:01:47 CEST
+------------------------------------------
+Fine macro: macro/O_200MeVu_lateral_1000000_g40.mac
+Ora:        mer  8 lug 2026 02:04:25 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/proton_200MeV_1000000_g40.mac
+Log:         output/log_proton_200MeV_1000000_g40.txt
+Ora:         mer  8 lug 2026 02:04:25 CEST
+------------------------------------------
+Fine macro: macro/proton_200MeV_1000000_g40.mac
+Ora:        mer  8 lug 2026 02:06:57 CEST
+------------------------------------------
+
+------------------------------------------
+Avvio macro: macro/proton_200MeV_lateral_1000000_g40.mac
+Log:         output/log_proton_200MeV_lateral_1000000_g40.txt
+Ora:         mer  8 lug 2026 02:06:57 CEST
+------------------------------------------
+Fine macro: macro/proton_200MeV_lateral_1000000_g40.mac
+Ora:        mer  8 lug 2026 02:10:19 CEST
+------------------------------------------
+
+==========================================
+Tutte le simulazioni sono terminate
+Data fine: mer  8 lug 2026 02:10:19 CEST
+==========================================
