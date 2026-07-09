@@ -63,7 +63,7 @@ Gli script principali sono:
    ./Progetto_Esame_MC_Geant ../Progetto_Esame_MC_Geant/macro/O_200MeVu_long_10000_g40.mac > O_10000.log 2>&1
    ```
 7. Fare il plot con Python:
-   Dalla cartella principale lanciare: ``` python3 radiobiology/python/plot_depth_dose.py ``` 
+   Dalla cartella principale lanciare: ``` python3 Progetto_Esame_MC_Geant/python/plot_depth_dose.py ``` 
 # README RADIOBIOLOGY
 
 \page Exampleradiobiology Example radiobiology
