@@ -50,6 +50,7 @@ Gli script principali sono:
    mkdir build_progetto
    cd build_progetto
    ```
+4.b Creare la cartella di output nella cartella di build: ``` mkdir -p output ``` (altrimenti le macro non salveranno gli output)
 5. Configurare il progetto con CMake: ``` cmake ../Progetto_Esame_MC_Geant``` e compilare con ad esempio 4 core ```make -j4```
 6. Lanciare una macro salvando tutto in un file log:
    ```
