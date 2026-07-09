@@ -54,7 +54,8 @@ Gli script principali sono:
 5. Configurare il progetto con CMake: ``` cmake ../Progetto_Esame_MC_Geant``` e compilare con ad esempio 4 core ```make -j4```
 6. Lanciare una macro salvando tutto in un file log:
    ```
-   ./radiobiology ../Progetto_Esame_MC_Geant/macro/ESEMPIO_proton_200MeV_10000_g40.mac > ESEMPIO_protoni_10000.log 2>&1
+   ./radiobiology ../Progetto_Esame_MC_Geant/macro/ESEMPIO_proton_200MeV_10000_g40.mac > proton_200MeV_10000_g40.log 2>&1
+
    ```
    oppure lanciare più simulazioni in sequenza:
    ``` 
@@ -64,7 +65,7 @@ Gli script principali sono:
    ./radiobiology ../Progetto_Esame_MC_Geant/macro/O_200MeVu_long_10000_g40.mac > O_10000.log 2>&1
    ```
 7. Fare il plot con Python:
-   Dalla cartella principale lanciare: ``` python3 Progetto_Esame_MC_Geant/python/plot_depth_dose.py ``` 
+   Dalla cartella principale lanciare: ``` Python3 ../Progetto_Esame_MC_Geant/python/ESEMPIO_plot_longitudinal_proton_g40.py``` 
 # README RADIOBIOLOGY
 
 \page Exampleradiobiology Example radiobiology
