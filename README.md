@@ -54,7 +54,7 @@ Gli script principali sono:
 5. Configurare il progetto con CMake: ``` cmake ../Progetto_Esame_MC_Geant``` e compilare con ad esempio 4 core ```make -j4```
 6. Lanciare una macro salvando tutto in un file log:
    ```
-   ./radiobiology ../Progetto_Esame_MC_Geant/macro/protoni_200MeV_long_10000_g40.mac > protoni_10000.log 2>&1
+   ./radiobiology ../Progetto_Esame_MC_Geant/macro/ESEMPIO_proton_200MeV_10000_g40.mac > ESEMPIO_protoni_10000.log 2>&1
    ```
    oppure lanciare più simulazioni in sequenza:
    ``` 
