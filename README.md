@@ -65,7 +65,10 @@ Gli script principali sono:
    ./radiobiology ../Progetto_Esame_MC_Geant/macro/O_200MeVu_long_10000_g40.mac > O_10000.log 2>&1
    ```
 7. Fare il plot con Python:
-   Dalla cartella principale lanciare: ``` Python3 ../Progetto_Esame_MC_Geant/python/ESEMPIO_plot_longitudinal_proton_g40.py``` 
+   Dalla cartella principale lanciare:
+   ```
+   Python3 ../Progetto_Esame_MC_Geant/python/ESEMPIO_plot_longitudinal_proton_g40.py
+   ``` 
 # README RADIOBIOLOGY
 
 \page Exampleradiobiology Example radiobiology
